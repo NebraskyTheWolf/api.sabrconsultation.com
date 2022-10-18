@@ -1,0 +1,10 @@
+{
+    "Database": {
+        "host": "mongodb://127.0.0.1:27017/SABR"
+    },
+    "RedisServer": {
+        "host": "127.0.0.1",
+        "password": "",
+        "port": 6379
+    }
+}
