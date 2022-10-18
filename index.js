@@ -5,11 +5,9 @@ const bodyParser = require('body-parser');
 const server = express();
 const https = require('https');
 
-
 const privateKey  = fs.readFileSync(config.security.ssl.key, 'utf8');
 const certificate = fs.readFileSync(config.security.ssl.crt, 'utf8');
 const credentials = {key: privateKey, cert: certificate};
-
 const httpsServer = https.createServer(credentials, server);
 
 server.use(express.static('public'));
@@ -81,8 +79,7 @@ app.use(function (req, res, next) {
 });
   
 app.use(function (err, req, res, next) {
-    console.log()
+    console.log(err);
 });
-
 
 httpsServer.listen(443);

@@ -5,10 +5,10 @@ module.exports = {
 
     // Réservation ( utilisateurs )
 
-    'post /api/booking/create': { 'function': 'BookingControlle.create', protected: true },
-    'get /api/booking/cancel/:reference': { 'function': 'BookingControlle.cancel', protected: true },
-    'get /api/booking/edit/:reference': { 'function': 'BookingControlle.edit', protected: true },
-    'get /api/booking/confirm/:id/:reference': { 'function': 'BookingControlle.confirm', protected: true },
+    'post /api/booking/create': { 'function': 'BookingController.create', protected: true },
+    'get /api/booking/cancel/:reference': { 'function': 'BookingController.cancel', protected: true },
+    'get /api/booking/edit/:reference': { 'function': 'BookingController.edit', protected: true },
+    'get /api/booking/confirm/:id/:reference': { 'function': 'BookingController.confirm', protected: true },
 
     // Connexion
 
