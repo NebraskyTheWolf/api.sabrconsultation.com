@@ -1,3 +1,9 @@
+const { 
+    fetchCustomer,
+    fetchBooking,
+    createCustomer,
+    createBooking
+} = require('../app/database/MongoDB');
 module.exports = {
     create: function (req, res) {
         
