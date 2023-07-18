@@ -13,7 +13,7 @@
     "express-session": "^1.17.3",
     "fs": "^0.0.1-security",
     "https": "^1.0.0",
-    "mongoose": "^6.6.5",
+    "mongoose": "^6.11.3",
     "pmr": "^0.0.1",
     "ssl": "^1.0.0"
   }
